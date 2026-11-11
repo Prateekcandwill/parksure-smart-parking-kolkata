@@ -1,0 +1,2 @@
+Made ParkSure. It's a Kolkata parking demo where the rate moves with demand, the barrier opens on ANPR, and one login runs both sides of the gate.
+Park without the wait.

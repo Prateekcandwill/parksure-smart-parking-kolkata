@@ -1,0 +1,2 @@
+# Keeps GitHub Pages from running Jekyll over the Vite output.
+# Without this, files and folders starting with an underscore are ignored.

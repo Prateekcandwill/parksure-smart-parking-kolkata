@@ -1,0 +1,591 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1720" height="1000" viewBox="0 0 1720 1000" role="img" aria-labelledby="title desc">
+  <title id="title">ParkSure low-fidelity mobile wireframe set</title>
+  <desc id="desc">Five black and white mobile wireframes: home dashboard, search and filter, place detail, user profile and settings.</desc>
+
+  <style>
+    .sans { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    .mono { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace; }
+    .t-title { font-size: 30px; font-weight: 700; fill: #111111; letter-spacing: -0.02em; }
+    .t-sub { font-size: 11px; fill: #6b6b6b; }
+    .t-h1 { font-size: 15px; font-weight: 700; fill: #111111; letter-spacing: -0.01em; }
+    .t-h2 { font-size: 11px; font-weight: 700; fill: #111111; }
+    .t-body { font-size: 9px; fill: #333333; }
+    .t-meta { font-size: 8px; fill: #6b6b6b; }
+    .t-label { font-size: 7px; font-weight: 700; fill: #6b6b6b; letter-spacing: 0.12em; }
+    .t-price { font-size: 20px; font-weight: 700; fill: #111111; letter-spacing: -0.02em; }
+    .t-btn { font-size: 9px; font-weight: 700; fill: #ffffff; }
+    .t-btn-dark { font-size: 9px; font-weight: 700; fill: #111111; }
+    .t-tiny { font-size: 6.5px; fill: #6b6b6b; letter-spacing: 0.04em; }
+    .t-white { fill: #ffffff; }
+    .hair { stroke: #e2e2e2; stroke-width: 1; }
+    .line { stroke: #111111; stroke-width: 1.4; fill: none; }
+    .soft-line { stroke: #cfcfcf; stroke-width: 1; fill: none; }
+    .frame { fill: #ffffff; stroke: #111111; stroke-width: 2; }
+    .screen { fill: #ffffff; stroke: #d4d4d4; stroke-width: 1; }
+    .placeholder { fill: #f0f0f0; stroke: #d0d0d0; stroke-width: 1; }
+  </style>
+
+  <defs>
+    <symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4.5 4.5"/>
+    </symbol>
+    <symbol id="i-home" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M4 10.5 12 4l8 6.5V20a1 1 0 0 1-1 1h-4v-6H9v6H5a1 1 0 0 1-1-1z"/>
+    </symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11Z"/><circle cx="12" cy="10" r="2.5"/>
+    </symbol>
+    <symbol id="i-car" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M5 16v2m14-2v2M3 16h18v-3l-2-5H5l-2 5v3Z"/><circle cx="7" cy="16" r="1.5"/><circle cx="17" cy="16" r="1.5"/>
+    </symbol>
+    <symbol id="i-user" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="8" r="3.5"/><path d="M5 20c0-3.5 3-6 7-6s7 2.5 7 6"/>
+    </symbol>
+    <symbol id="i-settings" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="3"/><path d="M12 2v3m0 14v3M2 12h3m14 0h3M4.9 4.9 7 7m10 10 2.1 2.1M19.1 4.9 17 7M7 17l-2.1 2.1"/>
+    </symbol>
+    <symbol id="i-filter" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M4 6h16M7 12h10M10 18h4"/>
+    </symbol>
+    <symbol id="i-back" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M15 5 8 12l7 7"/>
+    </symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="m9 5 7 7-7 7"/>
+    </symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 20s-7-4.5-7-10a4 4 0 0 1 7-2.5A4 4 0 0 1 19 10c0 5.5-7 10-7 10Z"/>
+    </symbol>
+    <symbol id="i-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="m6 6 12 12M18 6 6 18"/>
+    </symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="5" y="10" width="14" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/>
+    </symbol>
+    <symbol id="i-bell" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M6 17h12l-1.5-2.5V10a4.5 4.5 0 0 0-9 0v4.5L6 17Z"/><path d="M10 20a2 2 0 0 0 4 0"/>
+    </symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="8"/><path d="M4 12h16M12 4a13 13 0 0 1 0 16M12 4a13 13 0 0 0 0 16"/>
+    </symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/>
+    </symbol>
+    <symbol id="i-card" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18"/>
+    </symbol>
+    <symbol id="i-receipt" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M6 3h12v18l-3-2-3 2-3-2-3 2V3Z"/><path d="M9 8h6M9 12h6"/>
+    </symbol>
+    <symbol id="i-help" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 1 1 4 2c-1 .8-1.5 1.3-1.5 2.5"/><circle cx="12" cy="17" r=".8" fill="currentColor" stroke="none"/>
+    </symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 3 20 6v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6l8-3Z"/><path d="m9 12 2 2 4-4"/>
+    </symbol>
+    <symbol id="i-logout" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M10 4H5v16h5M14 8l4 4-4 4M8 12h10"/>
+    </symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M4 20V10m6 10V4m6 16v-7m4 7H2"/>
+    </symbol>
+    <symbol id="i-locate" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="3"/><path d="M12 2v3m0 14v3M2 12h3m14 0h3"/>
+    </symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>
+    </symbol>
+    <symbol id="i-camera" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="3" y="7" width="13" height="10" rx="2"/><path d="m16 10 5-2v8l-5-2"/>
+    </symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/>
+    </symbol>
+    <symbol id="i-doc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M9 12h6M9 16h6"/>
+    </symbol>
+  </defs>
+
+  <!-- Canvas -->
+  <rect width="1720" height="1000" fill="#ffffff"/>
+
+  <!-- Sheet header -->
+  <text x="54" y="58" class="sans t-label">PARKSURE / MOBILE WIREFRAMES</text>
+  <text x="54" y="90" class="sans t-title">Low-fidelity wireframe set</text>
+  <text x="54" y="112" class="sans t-sub">Dashboard / Home · Search &amp; Filter · Item Detail · User Profile · Settings</text>
+
+  <text x="1666" y="58" text-anchor="end" class="mono t-meta">LOW-FI / 05 SCREENS</text>
+  <text x="1666" y="74" text-anchor="end" class="mono t-meta">390 × 844 / B&amp;W</text>
+  <text x="1666" y="90" text-anchor="end" class="mono t-meta">v1.0 / SCHEMATIC</text>
+
+  <!-- ============================== 01 HOME ============================== -->
+  <g transform="translate(54,150)">
+    <rect x="0" y="0" width="300" height="640" rx="34" class="frame"/>
+    <rect x="10" y="10" width="280" height="620" rx="26" class="screen"/>
+    <rect x="120" y="18" width="60" height="7" rx="3.5" fill="#e6e6e6"/>
+
+    <text x="24" y="36" class="mono t-meta" font-weight="700" fill="#111">9:41</text>
+    <g transform="translate(232,29)" fill="#111">
+      <rect x="0" y="4" width="2" height="4" rx=".5"/>
+      <rect x="4" y="2.5" width="2" height="5.5" rx=".5"/>
+      <rect x="8" y="1" width="2" height="7" rx=".5"/>
+      <rect x="14" y="2.5" width="11" height="6.5" rx="1.5" fill="none" stroke="#111" stroke-width="1"/>
+      <rect x="26" y="4.5" width="1.5" height="2.5" rx=".5"/>
+    </g>
+
+    <!-- Greeting -->
+    <text x="22" y="62" class="sans t-meta">Good morning</text>
+    <text x="22" y="81" class="sans t-h1">Aritra Sen</text>
+    <circle cx="262" cy="68" r="16" fill="#f2f2f2" stroke="#111111" stroke-width="1.2"/>
+    <text x="262" y="72" text-anchor="middle" class="sans" font-size="9" font-weight="700" fill="#111">AS</text>
+
+    <!-- Search -->
+    <rect x="22" y="98" width="256" height="34" rx="10" fill="#f6f6f6" stroke="#d8d8d8"/>
+    <g transform="translate(34,107)" color="#6b6b6b"><use href="#i-search" width="14" height="14"/></g>
+    <text x="54" y="119" class="sans t-body" fill="#777">Search Kolkata parking</text>
+    <g transform="translate(252,107)" color="#6b6b6b"><use href="#i-filter" width="14" height="14"/></g>
+
+    <!-- Nearby heading -->
+    <text x="22" y="153" class="sans t-label">NEARBY</text>
+    <text x="278" y="153" text-anchor="end" class="sans t-meta" text-decoration="underline">See all</text>
+
+    <!-- Map placeholder -->
+    <rect x="22" y="164" width="256" height="140" rx="12" fill="#fafafa" stroke="#cfcfcf"/>
+    <g stroke="#ececec" stroke-width="1">
+      <path d="M54 165v138M86 165v138M118 165v138M150 165v138M182 165v138M214 165v138M246 165v138"/>
+      <path d="M23 192h254M23 220h254M23 248h254M23 276h254"/>
+    </g>
+    <path d="M90 226c0 0 10-8 10-16a10 10 0 1 0-20 0c0 8 10 16 10 16Z" fill="#111111"/>
+    <circle cx="90" cy="210" r="3" fill="#ffffff"/>
+    <path d="M176 258c0 0 8-6.5 8-13a8 8 0 1 0-16 0c0 6.5 8 13 8 13Z" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+    <circle cx="176" cy="245" r="2.4" fill="#111111"/>
+    <rect x="98" y="272" width="104" height="18" rx="9" fill="#ffffff" stroke="#d0d0d0"/>
+    <text x="150" y="284" text-anchor="middle" class="mono t-tiny" fill="#333">MAP PLACEHOLDER</text>
+    <circle cx="258" cy="282" r="11" fill="#ffffff" stroke="#cfcfcf"/>
+    <g transform="translate(252,276)" color="#111"><use href="#i-locate" width="12" height="12"/></g>
+
+    <!-- Card 1 -->
+    <rect x="22" y="318" width="256" height="104" rx="12" fill="#ffffff" stroke="#d8d8d8"/>
+    <rect x="34" y="330" width="64" height="64" rx="8" class="placeholder"/>
+    <path d="M34 330l64 64M98 330l-64 64" stroke="#d0d0d0" stroke-width="1"/>
+    <text x="110" y="344" class="sans t-h2">Park Street Centre</text>
+    <text x="110" y="357" class="sans t-meta">Park Street · 1.2 km</text>
+    <text x="110" y="378" class="sans t-h2">₹60 <tspan class="t-meta" font-weight="400">/ hr</tspan></text>
+    <rect x="168" y="366" width="50" height="16" rx="8" fill="#111111"/>
+    <text x="193" y="377" text-anchor="middle" class="mono" font-size="6" font-weight="700" fill="#fff">5 FREE</text>
+    <g transform="translate(262,360)" color="#111"><use href="#i-chevron" width="10" height="10"/></g>
+    <rect x="110" y="390" width="140" height="4" rx="2" fill="#e6e6e6"/>
+    <rect x="110" y="390" width="58" height="4" rx="2" fill="#111111"/>
+    <text x="110" y="406" class="sans t-tiny">Covered · CCTV · 24×7</text>
+
+    <!-- Card 2 -->
+    <rect x="22" y="432" width="256" height="104" rx="12" fill="#ffffff" stroke="#d8d8d8"/>
+    <rect x="34" y="444" width="64" height="64" rx="8" class="placeholder"/>
+    <path d="M34 444l64 64M98 444l-64 64" stroke="#d0d0d0" stroke-width="1"/>
+    <text x="110" y="458" class="sans t-h2">Salt Lake Sector V</text>
+    <text x="110" y="471" class="sans t-meta">Wipro Circle · 4.6 km</text>
+    <text x="110" y="492" class="sans t-h2">₹40 <tspan class="t-meta" font-weight="400">/ hr</tspan></text>
+    <rect x="168" y="480" width="50" height="16" rx="8" fill="#111111"/>
+    <text x="193" y="491" text-anchor="middle" class="mono" font-size="6" font-weight="700" fill="#fff">9 FREE</text>
+    <g transform="translate(262,474)" color="#111"><use href="#i-chevron" width="10" height="10"/></g>
+    <rect x="110" y="504" width="140" height="4" rx="2" fill="#e6e6e6"/>
+    <rect x="110" y="504" width="92" height="4" rx="2" fill="#111111"/>
+    <text x="110" y="520" class="sans t-tiny">Open · Surface · Camera only</text>
+
+    <!-- Bottom nav -->
+    <line x1="10" y1="570" x2="290" y2="570" stroke="#dadada"/>
+    <g transform="translate(38,582)" color="#111"><use href="#i-home" width="14" height="14"/></g>
+    <text x="45" y="607" text-anchor="middle" class="sans" font-size="7" font-weight="700" fill="#111">Home</text>
+    <circle cx="45" cy="615" r="1.6" fill="#111"/>
+    <g transform="translate(108,582)" color="#8a8a8a"><use href="#i-search" width="14" height="14"/></g>
+    <text x="115" y="607" text-anchor="middle" class="sans" font-size="7" fill="#8a8a8a">Find</text>
+    <g transform="translate(178,582)" color="#8a8a8a"><use href="#i-pin" width="14" height="14"/></g>
+    <text x="185" y="607" text-anchor="middle" class="sans" font-size="7" fill="#8a8a8a">Trips</text>
+    <g transform="translate(248,582)" color="#8a8a8a"><use href="#i-user" width="14" height="14"/></g>
+    <text x="255" y="607" text-anchor="middle" class="sans" font-size="7" fill="#8a8a8a">Profile</text>
+    <rect x="120" y="624" width="60" height="3" rx="1.5" fill="#111111"/>
+  </g>
+
+  <!-- ============================== 02 SEARCH ============================== -->
+  <g transform="translate(382,150)">
+    <rect x="0" y="0" width="300" height="640" rx="34" class="frame"/>
+    <rect x="10" y="10" width="280" height="620" rx="26" class="screen"/>
+    <rect x="120" y="18" width="60" height="7" rx="3.5" fill="#e6e6e6"/>
+
+    <text x="24" y="36" class="mono t-meta" font-weight="700" fill="#111">9:41</text>
+    <g transform="translate(232,29)" fill="#111">
+      <rect x="0" y="4" width="2" height="4" rx=".5"/><rect x="4" y="2.5" width="2" height="5.5" rx=".5"/>
+      <rect x="8" y="1" width="2" height="7" rx=".5"/>
+      <rect x="14" y="2.5" width="11" height="6.5" rx="1.5" fill="none" stroke="#111" stroke-width="1"/>
+      <rect x="26" y="4.5" width="1.5" height="2.5" rx=".5"/>
+    </g>
+
+    <g transform="translate(24,56)" color="#111"><use href="#i-back" width="16" height="16"/></g>
+    <text x="46" y="70" class="sans t-h1">Find parking</text>
+    <rect x="242" y="54" width="32" height="32" rx="10" fill="#f6f6f6" stroke="#d8d8d8"/>
+    <g transform="translate(251,63)" color="#111"><use href="#i-filter" width="14" height="14"/></g>
+
+    <!-- Active search -->
+    <rect x="22" y="96" width="256" height="38" rx="10" fill="#ffffff" stroke="#111111" stroke-width="1.5"/>
+    <g transform="translate(34,108)" color="#111"><use href="#i-search" width="14" height="14"/></g>
+    <text x="54" y="120" class="sans t-body" fill="#111">Park Street</text>
+    <g transform="translate(256,108)" color="#6b6b6b"><use href="#i-x" width="12" height="12"/></g>
+
+    <!-- Filter chips -->
+    <rect x="22" y="146" width="38" height="24" rx="12" fill="#111111"/>
+    <text x="41" y="161" text-anchor="middle" class="sans" font-size="7.5" font-weight="700" fill="#fff">All</text>
+    <rect x="68" y="146" width="62" height="24" rx="12" fill="#ffffff" stroke="#cfcfcf"/>
+    <text x="99" y="161" text-anchor="middle" class="sans" font-size="7.5" font-weight="600" fill="#333">Free now</text>
+    <rect x="138" y="146" width="62" height="24" rx="12" fill="#ffffff" stroke="#cfcfcf"/>
+    <text x="169" y="161" text-anchor="middle" class="sans" font-size="7.5" font-weight="600" fill="#333">Covered</text>
+    <rect x="208" y="146" width="56" height="24" rx="12" fill="#ffffff" stroke="#cfcfcf"/>
+    <text x="236" y="161" text-anchor="middle" class="sans" font-size="7.5" font-weight="600" fill="#333">Camera</text>
+
+    <!-- Results and view toggle -->
+    <text x="22" y="190" class="sans t-h2">12 places</text>
+    <rect x="196" y="174" width="82" height="24" rx="7" fill="#f5f5f5" stroke="#d8d8d8"/>
+    <rect x="196" y="174" width="41" height="24" rx="7" fill="#111111"/>
+    <text x="216.5" y="189" text-anchor="middle" class="sans" font-size="7" font-weight="700" fill="#fff">List</text>
+    <text x="257.5" y="189" text-anchor="middle" class="sans" font-size="7" font-weight="600" fill="#666">Map</text>
+
+    <!-- Result 1 -->
+    <rect x="22" y="212" width="256" height="96" rx="12" fill="#ffffff" stroke="#d8d8d8"/>
+    <rect x="32" y="222" width="56" height="56" rx="8" class="placeholder"/>
+    <path d="M32 222l56 56M88 222l-56 56" stroke="#d0d0d0"/>
+    <text x="98" y="234" class="sans t-h2">Park Street Centre</text>
+    <text x="98" y="247" class="sans t-meta">1.2 km · Covered</text>
+    <text x="98" y="265" class="sans t-h2">₹60 <tspan class="t-meta" font-weight="400">/ hr</tspan></text>
+    <rect x="202" y="224" width="52" height="16" rx="8" fill="#111111"/>
+    <text x="228" y="235" text-anchor="middle" class="mono" font-size="6" font-weight="700" fill="#fff">5 FREE</text>
+    <g transform="translate(262,252)" color="#111"><use href="#i-chevron" width="10" height="10"/></g>
+    <rect x="98" y="276" width="96" height="3" rx="1.5" fill="#e6e6e6"/>
+    <rect x="98" y="276" width="40" height="3" rx="1.5" fill="#111111"/>
+
+    <!-- Result 2 -->
+    <rect x="22" y="318" width="256" height="96" rx="12" fill="#ffffff" stroke="#d8d8d8"/>
+    <rect x="32" y="328" width="56" height="56" rx="8" class="placeholder"/>
+    <path d="M32 328l56 56M88 328l-56 56" stroke="#d0d0d0"/>
+    <text x="98" y="340" class="sans t-h2">Salt Lake Sector V</text>
+    <text x="98" y="353" class="sans t-meta">4.6 km · Surface</text>
+    <text x="98" y="371" class="sans t-h2">₹40 <tspan class="t-meta" font-weight="400">/ hr</tspan></text>
+    <rect x="202" y="330" width="52" height="16" rx="8" fill="#111111"/>
+    <text x="228" y="341" text-anchor="middle" class="mono" font-size="6" font-weight="700" fill="#fff">9 FREE</text>
+    <g transform="translate(262,358)" color="#111"><use href="#i-chevron" width="10" height="10"/></g>
+    <rect x="98" y="382" width="96" height="3" rx="1.5" fill="#e6e6e6"/>
+    <rect x="98" y="382" width="62" height="3" rx="1.5" fill="#111111"/>
+
+    <!-- Result 3 -->
+    <rect x="22" y="424" width="256" height="96" rx="12" fill="#ffffff" stroke="#d8d8d8"/>
+    <rect x="32" y="434" width="56" height="56" rx="8" class="placeholder"/>
+    <path d="M32 434l56 56M88 434l-56 56" stroke="#d0d0d0"/>
+    <text x="98" y="446" class="sans t-h2">Howrah Station</text>
+    <text x="98" y="459" class="sans t-meta">5.1 km · Surface</text>
+    <text x="98" y="477" class="sans t-h2">₹35 <tspan class="t-meta" font-weight="400">/ hr</tspan></text>
+    <rect x="202" y="436" width="52" height="16" rx="8" fill="#111111"/>
+    <text x="228" y="447" text-anchor="middle" class="mono" font-size="6" font-weight="700" fill="#fff">4 FREE</text>
+    <g transform="translate(262,464)" color="#111"><use href="#i-chevron" width="10" height="10"/></g>
+    <rect x="98" y="488" width="96" height="3" rx="1.5" fill="#e6e6e6"/>
+    <rect x="98" y="488" width="28" height="3" rx="1.5" fill="#111111"/>
+
+    <!-- Bottom nav -->
+    <line x1="10" y1="570" x2="290" y2="570" stroke="#dadada"/>
+    <g transform="translate(38,582)" color="#8a8a8a"><use href="#i-home" width="14" height="14"/></g>
+    <text x="45" y="607" text-anchor="middle" class="sans" font-size="7" fill="#8a8a8a">Home</text>
+    <g transform="translate(108,582)" color="#111"><use href="#i-search" width="14" height="14"/></g>
+    <text x="115" y="607" text-anchor="middle" class="sans" font-size="7" font-weight="700" fill="#111">Find</text>
+    <circle cx="115" cy="615" r="1.6" fill="#111"/>
+    <g transform="translate(178,582)" color="#8a8a8a"><use href="#i-pin" width="14" height="14"/></g>
+    <text x="185" y="607" text-anchor="middle" class="sans" font-size="7" fill="#8a8a8a">Trips</text>
+    <g transform="translate(248,582)" color="#8a8a8a"><use href="#i-user" width="14" height="14"/></g>
+    <text x="255" y="607" text-anchor="middle" class="sans" font-size="7" fill="#8a8a8a">Profile</text>
+    <rect x="120" y="624" width="60" height="3" rx="1.5" fill="#111111"/>
+  </g>
+
+  <!-- ============================== 03 DETAIL ============================== -->
+  <g transform="translate(710,150)">
+    <rect x="0" y="0" width="300" height="640" rx="34" class="frame"/>
+    <rect x="10" y="10" width="280" height="620" rx="26" class="screen"/>
+    <rect x="120" y="18" width="60" height="7" rx="3.5" fill="#e6e6e6"/>
+
+    <text x="24" y="36" class="mono t-meta" font-weight="700" fill="#111">9:41</text>
+    <g transform="translate(232,29)" fill="#111">
+      <rect x="0" y="4" width="2" height="4" rx=".5"/><rect x="4" y="2.5" width="2" height="5.5" rx=".5"/>
+      <rect x="8" y="1" width="2" height="7" rx=".5"/>
+      <rect x="14" y="2.5" width="11" height="6.5" rx="1.5" fill="none" stroke="#111" stroke-width="1"/>
+      <rect x="26" y="4.5" width="1.5" height="2.5" rx=".5"/>
+    </g>
+
+    <g transform="translate(24,56)" color="#111"><use href="#i-back" width="16" height="16"/></g>
+    <text x="46" y="70" class="sans t-h1">Place detail</text>
+    <g transform="translate(252,60)" color="#111"><use href="#i-heart" width="16" height="16"/></g>
+
+    <!-- Hero -->
+    <rect x="22" y="92" width="256" height="150" rx="12" class="placeholder"/>
+    <path d="M22 92l256 150M278 92L22 242" stroke="#d0d0d0"/>
+    <rect x="32" y="102" width="42" height="17" rx="8" fill="#111111"/>
+    <text x="53" y="113" text-anchor="middle" class="mono" font-size="6" font-weight="700" fill="#fff">OPEN</text>
+    <rect x="212" y="102" width="56" height="17" rx="8" fill="#ffffff" stroke="#d0d0d0"/>
+    <text x="240" y="113" text-anchor="middle" class="mono" font-size="6" fill="#333">1.2 km</text>
+    <rect x="104" y="158" width="92" height="18" rx="9" fill="#ffffff" stroke="#d0d0d0"/>
+    <text x="150" y="170" text-anchor="middle" class="mono t-tiny" fill="#333">PHOTO / MAP</text>
+
+    <!-- Title and price -->
+    <text x="22" y="268" class="sans t-h1" font-size="16">Park Street Centre</text>
+    <text x="22" y="284" class="sans t-meta">Park Street · Covered · 24×7</text>
+    <text x="22" y="314" class="sans t-price">₹60</text>
+    <text x="62" y="314" class="sans t-meta">/ hr</text>
+    <rect x="206" y="296" width="72" height="20" rx="10" fill="#111111"/>
+    <text x="242" y="309" text-anchor="middle" class="mono" font-size="6.5" font-weight="700" fill="#fff">PEAK 1.25×</text>
+    <line x1="22" y1="326" x2="278" y2="326" class="hair"/>
+
+    <!-- Availability -->
+    <text x="22" y="346" class="sans t-label">AVAILABILITY</text>
+    <text x="278" y="346" text-anchor="end" class="sans" font-size="9" font-weight="700" fill="#111">5 of 12 free</text>
+    <g transform="translate(22,358)">
+      <rect x="0" y="0" width="14" height="14" rx="2" fill="#ffffff" stroke="#111111" stroke-width="1.2"/>
+      <rect x="20" y="0" width="14" height="14" rx="2" fill="#ffffff" stroke="#111111" stroke-width="1.2"/>
+      <rect x="40" y="0" width="14" height="14" rx="2" fill="#111111"/>
+      <rect x="60" y="0" width="14" height="14" rx="2" fill="#ffffff" stroke="#111111" stroke-width="1.2"/>
+      <rect x="80" y="0" width="14" height="14" rx="2" fill="#d0d0d0" stroke="#a8a8a8"/>
+      <rect x="100" y="0" width="14" height="14" rx="2" fill="#ffffff" stroke="#111111" stroke-width="1.2"/>
+      <rect x="120" y="0" width="14" height="14" rx="2" fill="#111111"/>
+      <rect x="140" y="0" width="14" height="14" rx="2" fill="#111111"/>
+      <rect x="160" y="0" width="14" height="14" rx="2" fill="#ffffff" stroke="#111111" stroke-width="1.2"/>
+      <rect x="180" y="0" width="14" height="14" rx="2" fill="#ffffff" stroke="#111111" stroke-width="1.2"/>
+      <rect x="200" y="0" width="14" height="14" rx="2" fill="#d0d0d0" stroke="#a8a8a8"/>
+      <rect x="220" y="0" width="14" height="14" rx="2" fill="#ffffff" stroke="#111111" stroke-width="1.2"/>
+    </g>
+    <g transform="translate(22,386)">
+      <rect x="0" y="0" width="8" height="8" rx="1" fill="#ffffff" stroke="#111111"/>
+      <text x="13" y="7" class="sans" font-size="6.5" fill="#6b6b6b">Free</text>
+      <rect x="44" y="0" width="8" height="8" rx="1" fill="#111111"/>
+      <text x="57" y="7" class="sans" font-size="6.5" fill="#6b6b6b">Occupied</text>
+      <rect x="104" y="0" width="8" height="8" rx="1" fill="#d0d0d0" stroke="#a8a8a8"/>
+      <text x="117" y="7" class="sans" font-size="6.5" fill="#6b6b6b">Reserved</text>
+    </g>
+
+    <!-- Amenities -->
+    <g transform="translate(22,404)" color="#111"><use href="#i-shield" width="14" height="14"/></g>
+    <text x="41" y="415" class="sans" font-size="8" fill="#333">Covered</text>
+    <g transform="translate(100,404)" color="#111"><use href="#i-camera" width="14" height="14"/></g>
+    <text x="119" y="415" class="sans" font-size="8" fill="#333">CCTV</text>
+    <g transform="translate(170,404)" color="#111"><use href="#i-clock" width="14" height="14"/></g>
+    <text x="189" y="415" class="sans" font-size="8" fill="#333">24×7</text>
+
+    <!-- Rules -->
+    <rect x="22" y="432" width="256" height="38" rx="8" fill="#f7f7f7" stroke="#e0e0e0"/>
+    <text x="32" y="448" class="sans" font-size="8" fill="#333">Max stay 4 hrs · No overnight parking</text>
+    <text x="32" y="461" class="sans t-tiny">Cancellation free up to 15 min before entry</text>
+
+    <!-- CTA -->
+    <rect x="22" y="492" width="96" height="42" rx="10" fill="#ffffff" stroke="#111111" stroke-width="1.2"/>
+    <g transform="translate(36,505)" color="#111"><use href="#i-pin" width="13" height="13"/></g>
+    <text x="78" y="517" text-anchor="middle" class="sans t-btn-dark">Directions</text>
+    <rect x="126" y="492" width="152" height="42" rx="10" fill="#111111"/>
+    <text x="202" y="518" text-anchor="middle" class="sans t-btn" font-size="10">Book a bay</text>
+    <text x="150" y="552" text-anchor="middle" class="sans t-tiny">No hidden fees · GST receipt on payment</text>
+    <rect x="120" y="624" width="60" height="3" rx="1.5" fill="#111111"/>
+  </g>
+
+  <!-- ============================== 04 PROFILE ============================== -->
+  <g transform="translate(1038,150)">
+    <rect x="0" y="0" width="300" height="640" rx="34" class="frame"/>
+    <rect x="10" y="10" width="280" height="620" rx="26" class="screen"/>
+    <rect x="120" y="18" width="60" height="7" rx="3.5" fill="#e6e6e6"/>
+
+    <text x="24" y="36" class="mono t-meta" font-weight="700" fill="#111">9:41</text>
+    <g transform="translate(232,29)" fill="#111">
+      <rect x="0" y="4" width="2" height="4" rx=".5"/><rect x="4" y="2.5" width="2" height="5.5" rx=".5"/>
+      <rect x="8" y="1" width="2" height="7" rx=".5"/>
+      <rect x="14" y="2.5" width="11" height="6.5" rx="1.5" fill="none" stroke="#111" stroke-width="1"/>
+      <rect x="26" y="4.5" width="1.5" height="2.5" rx=".5"/>
+    </g>
+
+    <text x="22" y="70" class="sans t-h1" font-size="16">Profile</text>
+    <g transform="translate(252,58)" color="#111"><use href="#i-settings" width="16" height="16"/></g>
+
+    <circle cx="150" cy="126" r="34" fill="#f2f2f2" stroke="#111111" stroke-width="1.4"/>
+    <text x="150" y="132" text-anchor="middle" class="sans" font-size="20" font-weight="700" fill="#111">AS</text>
+
+    <text x="150" y="180" text-anchor="middle" class="sans t-h1">Aritra Sen</text>
+    <text x="150" y="196" text-anchor="middle" class="sans t-meta">aritra@demo</text>
+    <text x="150" y="208" text-anchor="middle" class="sans t-meta mono">+91 98300 12345</text>
+    <rect x="95" y="220" width="110" height="30" rx="8" fill="#ffffff" stroke="#111111" stroke-width="1.2"/>
+    <text x="150" y="239" text-anchor="middle" class="sans" font-size="8.5" font-weight="700" fill="#111">Edit profile</text>
+
+    <!-- Vehicle -->
+    <rect x="22" y="266" width="256" height="66" rx="12" fill="#ffffff" stroke="#d8d8d8"/>
+    <g transform="translate(34,280)" color="#111"><use href="#i-car" width="20" height="20"/></g>
+    <text x="64" y="289" class="mono" font-size="10" font-weight="700" fill="#111">WB 06 AR 1234</text>
+    <text x="64" y="303" class="sans t-meta">Honda City · Petrol</text>
+    <rect x="212" y="278" width="54" height="16" rx="8" fill="#f0f0f0" stroke="#d0d0d0"/>
+    <text x="239" y="289" text-anchor="middle" class="mono" font-size="6" font-weight="700" fill="#333">PRIMARY</text>
+
+    <!-- Stats -->
+    <line x1="107" y1="346" x2="107" y2="380" class="hair"/>
+    <line x1="192" y1="346" x2="192" y2="380" class="hair"/>
+    <text x="64" y="361" text-anchor="middle" class="sans" font-size="15" font-weight="700" fill="#111">24</text>
+    <text x="64" y="375" text-anchor="middle" class="sans t-label">TRIPS</text>
+    <text x="149" y="361" text-anchor="middle" class="sans" font-size="15" font-weight="700" fill="#111">₹1,240</text>
+    <text x="149" y="375" text-anchor="middle" class="sans t-label">SPENT</text>
+    <text x="235" y="361" text-anchor="middle" class="sans" font-size="15" font-weight="700" fill="#111">4.9</text>
+    <text x="235" y="375" text-anchor="middle" class="sans t-label">RATING</text>
+
+    <!-- Menu -->
+    <g>
+      <g transform="translate(24,408)" color="#111"><use href="#i-card" width="14" height="14"/></g>
+      <text x="48" y="419" class="sans" font-size="9" fill="#111">Payment methods</text>
+      <g transform="translate(266,408)" color="#111"><use href="#i-chevron" width="10" height="10"/></g>
+      <line x1="48" y1="436" x2="278" y2="436" class="hair"/>
+
+      <g transform="translate(24,448)" color="#111"><use href="#i-receipt" width="14" height="14"/></g>
+      <text x="48" y="459" class="sans" font-size="9" fill="#111">Receipts &amp; refunds</text>
+      <g transform="translate(266,448)" color="#111"><use href="#i-chevron" width="10" height="10"/></g>
+      <line x1="48" y1="476" x2="278" y2="476" class="hair"/>
+
+      <g transform="translate(24,488)" color="#111"><use href="#i-help" width="14" height="14"/></g>
+      <text x="48" y="499" class="sans" font-size="9" fill="#111">Help &amp; support</text>
+      <g transform="translate(266,488)" color="#111"><use href="#i-chevron" width="10" height="10"/></g>
+      <line x1="48" y1="516" x2="278" y2="516" class="hair"/>
+
+      <g transform="translate(24,528)" color="#111"><use href="#i-shield" width="14" height="14"/></g>
+      <text x="48" y="539" class="sans" font-size="9" fill="#111">Privacy &amp; terms</text>
+      <g transform="translate(266,528)" color="#111"><use href="#i-chevron" width="10" height="10"/></g>
+    </g>
+
+    <!-- Bottom nav -->
+    <line x1="10" y1="570" x2="290" y2="570" stroke="#dadada"/>
+    <g transform="translate(38,582)" color="#8a8a8a"><use href="#i-home" width="14" height="14"/></g>
+    <text x="45" y="607" text-anchor="middle" class="sans" font-size="7" fill="#8a8a8a">Home</text>
+    <g transform="translate(108,582)" color="#8a8a8a"><use href="#i-search" width="14" height="14"/></g>
+    <text x="115" y="607" text-anchor="middle" class="sans" font-size="7" fill="#8a8a8a">Find</text>
+    <g transform="translate(178,582)" color="#8a8a8a"><use href="#i-pin" width="14" height="14"/></g>
+    <text x="185" y="607" text-anchor="middle" class="sans" font-size="7" fill="#8a8a8a">Trips</text>
+    <g transform="translate(248,582)" color="#111"><use href="#i-user" width="14" height="14"/></g>
+    <text x="255" y="607" text-anchor="middle" class="sans" font-size="7" font-weight="700" fill="#111">Profile</text>
+    <circle cx="255" cy="615" r="1.6" fill="#111"/>
+    <rect x="120" y="624" width="60" height="3" rx="1.5" fill="#111111"/>
+  </g>
+
+  <!-- ============================== 05 SETTINGS ============================== -->
+  <g transform="translate(1366,150)">
+    <rect x="0" y="0" width="300" height="640" rx="34" class="frame"/>
+    <rect x="10" y="10" width="280" height="620" rx="26" class="screen"/>
+    <rect x="120" y="18" width="60" height="7" rx="3.5" fill="#e6e6e6"/>
+
+    <text x="24" y="36" class="mono t-meta" font-weight="700" fill="#111">9:41</text>
+    <g transform="translate(232,29)" fill="#111">
+      <rect x="0" y="4" width="2" height="4" rx=".5"/><rect x="4" y="2.5" width="2" height="5.5" rx=".5"/>
+      <rect x="8" y="1" width="2" height="7" rx=".5"/>
+      <rect x="14" y="2.5" width="11" height="6.5" rx="1.5" fill="none" stroke="#111" stroke-width="1"/>
+      <rect x="26" y="4.5" width="1.5" height="2.5" rx=".5"/>
+    </g>
+
+    <g transform="translate(24,56)" color="#111"><use href="#i-back" width="16" height="16"/></g>
+    <text x="46" y="70" class="sans t-h1" font-size="16">Settings</text>
+
+    <!-- Account -->
+    <text x="22" y="98" class="sans t-label">ACCOUNT</text>
+    <g transform="translate(24,110)" color="#111"><use href="#i-user" width="14" height="14"/></g>
+    <text x="48" y="121" class="sans" font-size="9" fill="#111">Edit profile</text>
+    <g transform="translate(266,110)" color="#111"><use href="#i-chevron" width="10" height="10"/></g>
+    <line x1="48" y1="142" x2="278" y2="142" class="hair"/>
+    <g transform="translate(24,144)" color="#111"><use href="#i-lock" width="14" height="14"/></g>
+    <text x="48" y="155" class="sans" font-size="9" fill="#111">Change password</text>
+    <g transform="translate(266,144)" color="#111"><use href="#i-chevron" width="10" height="10"/></g>
+
+    <!-- Preferences -->
+    <text x="22" y="198" class="sans t-label">PREFERENCES</text>
+    <g transform="translate(24,210)" color="#111"><use href="#i-moon" width="14" height="14"/></g>
+    <text x="48" y="221" class="sans" font-size="9" fill="#111">Dark mode</text>
+    <rect x="240" y="208" width="32" height="18" rx="9" fill="#111111"/>
+    <circle cx="263" cy="217" r="6" fill="#ffffff"/>
+    <line x1="48" y1="242" x2="278" y2="242" class="hair"/>
+    <g transform="translate(24,244)" color="#111"><use href="#i-globe" width="14" height="14"/></g>
+    <text x="48" y="255" class="sans" font-size="9" fill="#111">Language</text>
+    <text x="248" y="255" text-anchor="end" class="sans t-meta">English</text>
+    <g transform="translate(260,244)" color="#111"><use href="#i-chevron" width="10" height="10"/></g>
+    <line x1="48" y1="276" x2="278" y2="276" class="hair"/>
+    <g transform="translate(24,278)" color="#111"><use href="#i-bell" width="14" height="14"/></g>
+    <text x="48" y="289" class="sans" font-size="9" fill="#111">Notifications</text>
+    <rect x="240" y="276" width="32" height="18" rx="9" fill="#ededed" stroke="#c9c9c9"/>
+    <circle cx="249" cy="285" r="6" fill="#ffffff" stroke="#c9c9c9"/>
+
+    <!-- Privacy -->
+    <text x="22" y="332" class="sans t-label">PRIVACY</text>
+    <g transform="translate(24,344)" color="#111"><use href="#i-chart" width="14" height="14"/></g>
+    <text x="48" y="355" class="sans" font-size="9" fill="#111">Analytics</text>
+    <rect x="240" y="342" width="32" height="18" rx="9" fill="#ededed" stroke="#c9c9c9"/>
+    <circle cx="249" cy="351" r="6" fill="#ffffff" stroke="#c9c9c9"/>
+    <line x1="48" y1="376" x2="278" y2="376" class="hair"/>
+    <g transform="translate(24,378)" color="#111"><use href="#i-shield" width="14" height="14"/></g>
+    <text x="48" y="389" class="sans" font-size="9" fill="#111">Privacy policy</text>
+    <g transform="translate(266,378)" color="#111"><use href="#i-chevron" width="10" height="10"/></g>
+    <line x1="48" y1="410" x2="278" y2="410" class="hair"/>
+    <g transform="translate(24,412)" color="#111"><use href="#i-doc" width="14" height="14"/></g>
+    <text x="48" y="423" class="sans" font-size="9" fill="#111">Terms of use</text>
+    <g transform="translate(266,412)" color="#111"><use href="#i-chevron" width="10" height="10"/></g>
+
+    <!-- Support -->
+    <text x="22" y="466" class="sans t-label">SUPPORT</text>
+    <g transform="translate(24,478)" color="#111"><use href="#i-help" width="14" height="14"/></g>
+    <text x="48" y="489" class="sans" font-size="9" fill="#111">Help centre</text>
+    <g transform="translate(266,478)" color="#111"><use href="#i-chevron" width="10" height="10"/></g>
+    <line x1="48" y1="510" x2="278" y2="510" class="hair"/>
+    <g transform="translate(24,512)" color="#111"><use href="#i-mail" width="14" height="14"/></g>
+    <text x="48" y="523" class="sans" font-size="9" fill="#111">Contact us</text>
+    <g transform="translate(266,512)" color="#111"><use href="#i-chevron" width="10" height="10"/></g>
+
+    <!-- Sign out -->
+    <rect x="22" y="560" width="256" height="38" rx="10" fill="#ffffff" stroke="#111111" stroke-width="1.2"/>
+    <g transform="translate(118,571)" color="#111"><use href="#i-logout" width="14" height="14"/></g>
+    <text x="138" y="584" class="sans" font-size="9" font-weight="700" fill="#111">Sign out</text>
+
+    <text x="150" y="614" text-anchor="middle" class="sans t-tiny">ParkSure v1.0 · Demo mode</text>
+    <rect x="120" y="624" width="60" height="3" rx="1.5" fill="#111111"/>
+  </g>
+
+  <!-- ============================== LABELS ============================== -->
+  <text x="204" y="818" text-anchor="middle" class="sans t-label" font-size="8">01 / HOME</text>
+  <text x="204" y="834" text-anchor="middle" class="sans t-meta">Greeting, search, map preview and nearby places.</text>
+
+  <text x="532" y="818" text-anchor="middle" class="sans t-label" font-size="8">02 / SEARCH &amp; FILTER</text>
+  <text x="532" y="834" text-anchor="middle" class="sans t-meta">Query, chips, list/map toggle and ranked results.</text>
+
+  <text x="860" y="818" text-anchor="middle" class="sans t-label" font-size="8">03 / ITEM DETAIL</text>
+  <text x="860" y="834" text-anchor="middle" class="sans t-meta">Hero, live price, bay availability and primary CTA.</text>
+
+  <text x="1188" y="818" text-anchor="middle" class="sans t-label" font-size="8">04 / USER PROFILE</text>
+  <text x="1188" y="834" text-anchor="middle" class="sans t-meta">Identity, vehicle, activity summary and account menu.</text>
+
+  <text x="1516" y="818" text-anchor="middle" class="sans t-label" font-size="8">05 / SETTINGS</text>
+  <text x="1516" y="834" text-anchor="middle" class="sans t-meta">Grouped preferences, privacy, support and sign out.</text>
+
+  <!-- ============================== KEY ============================== -->
+  <line x1="54" y1="880" x2="1666" y2="880" stroke="#dcdcdc"/>
+  <text x="54" y="902" class="sans t-label">WIREFRAME KEY</text>
+
+  <rect x="54" y="916" width="18" height="14" fill="#f0f0f0" stroke="#d0d0d0"/>
+  <path d="M54 916l18 14M72 916l-18 14" stroke="#d0d0d0"/>
+  <text x="80" y="927" class="sans t-meta">Image / map placeholder</text>
+
+  <rect x="250" y="916" width="24" height="14" rx="3" fill="#111111"/>
+  <text x="282" y="927" class="sans t-meta">Primary action / active state</text>
+
+  <rect x="480" y="916" width="24" height="14" rx="3" fill="#ffffff" stroke="#111111"/>
+  <text x="512" y="927" class="sans t-meta">Secondary action</text>
+
+  <rect x="680" y="916" width="28" height="16" rx="8" fill="#111111"/>
+  <circle cx="700" cy="924" r="5" fill="#ffffff"/>
+  <text x="716" y="927" class="sans t-meta">Preference control</text>
+
+  <rect x="900" y="910" width="16" height="24" rx="4" fill="#ffffff" stroke="#111111"/>
+  <text x="924" y="927" class="sans t-meta">Mobile frame · 390 × 844</text>
+
+  <text x="1666" y="902" text-anchor="end" class="sans t-meta">Low-fidelity: layout, hierarchy and flow only. No brand colour, imagery or final copy.</text>
+
+  <!-- Footer -->
+  <line x1="54" y1="950" x2="1666" y2="950" stroke="#dcdcdc"/>
+  <text x="54" y="970" class="sans t-meta">ParkSure · Demo wireframe set</text>
+  <text x="1666" y="970" text-anchor="end" class="sans t-meta">Black &amp; white / v1.0</text>
+</svg>

@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Private, authenticated workspaces are noindex and not useful to crawlers.
+Disallow: /driver/
+Disallow: /attendant/
+Disallow: /operator/
+Disallow: /admin/
+Disallow: /choose-role
+
+Sitemap: https://prateekcandwill.github.io/parksure-smart-parking-kolkata/sitemap.xml

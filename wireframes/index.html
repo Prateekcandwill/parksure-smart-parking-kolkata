@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ParkSure — Low-fidelity wireframe set</title>
+    <meta
+      name="description"
+      content="Black and white low-fidelity wireframes for the five core ParkSure mobile screens: home, search and filter, place detail, profile and settings."
+    />
+    <style>
+      :root {
+        --ink: #111111;
+        --ink-soft: #333333;
+        --muted: #6b6b6b;
+        --rule: #dcdcdc;
+        --wash: #f6f6f6;
+        --paper: #ffffff;
+        --mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+        --sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      html {
+        -webkit-text-size-adjust: 100%;
+      }
+
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: var(--sans);
+        font-size: 15px;
+        line-height: 1.55;
+        overflow-x: clip;
+      }
+
+      a {
+        color: inherit;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 3px;
+      }
+
+      .wrap {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 24px;
+        min-width: 0;
+      }
+
+      header.top {
+        border-bottom: 1px solid var(--rule);
+        padding: 28px 0 22px;
+      }
+
+      .eyebrow {
+        font-family: var(--mono);
+        font-size: 10px;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: var(--muted);
+        margin: 0 0 10px;
+      }
+
+      h1 {
+        font-size: clamp(24px, 4vw, 34px);
+        line-height: 1.1;
+        letter-spacing: -0.02em;
+        margin: 0 0 8px;
+        font-weight: 700;
+      }
+
+      .lede {
+        margin: 0;
+        max-width: 62ch;
+        color: var(--ink-soft);
+      }
+
+      .top-row {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        justify-content: space-between;
+        gap: 20px;
+      }
+
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        min-height: 48px;
+        padding: 0 18px;
+        border-radius: 8px;
+        border: 1.5px solid var(--ink);
+        background: var(--paper);
+        color: var(--ink);
+        font-size: 13px;
+        font-weight: 700;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .btn.primary {
+        background: var(--ink);
+        color: #ffffff;
+      }
+
+      .btn:hover {
+        background: var(--wash);
+      }
+
+      .btn.primary:hover {
+        background: #000000;
+      }
+
+      .btn:focus-visible {
+        outline: 3px solid var(--ink);
+        outline-offset: 3px;
+      }
+
+      section {
+        padding: 36px 0;
+        border-bottom: 1px solid var(--rule);
+        min-width: 0;
+      }
+
+      h2 {
+        font-family: var(--mono);
+        font-size: 10px;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: var(--muted);
+        margin: 0 0 16px;
+        font-weight: 700;
+      }
+
+      .sheet {
+        margin: 0;
+        border: 1px solid var(--rule);
+        border-radius: 10px;
+        overflow: hidden;
+        background: var(--paper);
+      }
+
+      .sheet img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+
+      figcaption {
+        font-size: 12px;
+        color: var(--muted);
+        padding: 10px 14px;
+        border-top: 1px solid var(--rule);
+        font-family: var(--mono);
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+        gap: 1px;
+        background: var(--rule);
+        border: 1px solid var(--rule);
+        border-radius: 10px;
+        overflow: hidden;
+      }
+
+      .cell {
+        background: var(--paper);
+        padding: 18px 18px 20px;
+        min-width: 0;
+      }
+
+      .cell .num {
+        font-family: var(--mono);
+        font-size: 10px;
+        letter-spacing: 0.14em;
+        color: var(--muted);
+        display: block;
+        margin-bottom: 6px;
+      }
+
+      .cell h3 {
+        font-size: 14px;
+        margin: 0 0 6px;
+        letter-spacing: -0.01em;
+      }
+
+      .cell p {
+        margin: 0;
+        font-size: 13px;
+        color: var(--ink-soft);
+      }
+
+      .notes {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+        gap: 28px 36px;
+      }
+
+      .notes h3 {
+        font-size: 13px;
+        margin: 0 0 8px;
+        padding-bottom: 8px;
+        border-bottom: 1px solid var(--rule);
+      }
+
+      .notes ul {
+        margin: 0;
+        padding-left: 18px;
+        font-size: 13px;
+        color: var(--ink-soft);
+      }
+
+      .notes li + li {
+        margin-top: 6px;
+      }
+
+      .flow {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 8px;
+        font-family: var(--mono);
+        font-size: 11px;
+        letter-spacing: 0.06em;
+      }
+
+      .flow span.step {
+        border: 1px solid var(--ink);
+        border-radius: 999px;
+        padding: 7px 13px;
+        white-space: nowrap;
+      }
+
+      .flow span.arrow {
+        color: var(--muted);
+      }
+
+      .swatches {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 22px;
+      }
+
+      .swatch {
+        min-width: 96px;
+      }
+
+      .swatch .chip {
+        height: 40px;
+        border: 1px solid var(--rule);
+        border-radius: 6px;
+        margin-bottom: 8px;
+      }
+
+      .swatch code {
+        font-family: var(--mono);
+        font-size: 11px;
+        color: var(--muted);
+        display: block;
+      }
+
+      footer {
+        padding: 26px 0 40px;
+        font-size: 12px;
+        color: var(--muted);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 10px;
+        font-family: var(--mono);
+      }
+
+      @media (max-width: 640px) {
+        .wrap {
+          padding: 0 16px;
+        }
+        .actions {
+          width: 100%;
+        }
+        .btn {
+          flex: 1 1 auto;
+          justify-content: center;
+        }
+        .flow {
+          gap: 6px;
+        }
+      }
+
+      @media print {
+        header.top {
+          padding-top: 0;
+        }
+        .actions {
+          display: none;
+        }
+        section {
+          break-inside: avoid;
+        }
+        body {
+          font-size: 11pt;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="top">
+      <div class="wrap top-row">
+        <div>
+          <p class="eyebrow">ParkSure / Mobile wireframes</p>
+          <h1>Low-fidelity wireframe set</h1>
+          <p class="lede">
+            Five screens covering the core parking journey — from discovery to booking and account
+            settings. Black and white, vector only, layout and hierarchy before visual design.
+          </p>
+        </div>
+        <div class="actions">
+          <a class="btn primary" href="parksure-wireframes.svg" download>Download SVG</a>
+          <a class="btn" href="parksure-wireframes.png" download>Download PNG</a>
+          <a class="btn" href="#" onclick="window.print(); return false;">Print / PDF</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <div class="wrap">
+          <h2>01 — The sheet</h2>
+          <figure class="sheet">
+            <img
+              src="parksure-wireframes.svg"
+              alt="Five mobile wireframes side by side: home dashboard, search and filter, place detail, user profile and settings."
+              width="1720"
+              height="1000"
+            />
+            <figcaption>1720 × 1000 · 5 frames at 390 × 844 · black &amp; white / v1.0</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section>
+        <div class="wrap">
+          <h2>02 — Screens</h2>
+          <div class="grid">
+            <div class="cell">
+              <span class="num">01</span>
+              <h3>Dashboard / Home</h3>
+              <p>
+                Greeting, primary search entry, map preview and two nearby place cards with live
+                price, free-bay count and occupancy bar.
+              </p>
+            </div>
+            <div class="cell">
+              <span class="num">02</span>
+              <h3>Search &amp; Filter</h3>
+              <p>
+                Active query, filter chips, result count, list/map toggle and ranked results. Filter
+                panel opens as a sheet from the top-right control.
+              </p>
+            </div>
+            <div class="cell">
+              <span class="num">03</span>
+              <h3>Item Detail</h3>
+              <p>
+                Photo/map hero, live hourly rate with peak multiplier, bay availability grid,
+                amenities, rules and the two primary actions.
+              </p>
+            </div>
+            <div class="cell">
+              <span class="num">04</span>
+              <h3>User Profile</h3>
+              <p>
+                Identity, verified phone and email, primary vehicle, activity stats and the account
+                menu for payments, receipts, help and legal.
+              </p>
+            </div>
+            <div class="cell">
+              <span class="num">05</span>
+              <h3>Settings</h3>
+              <p>
+                Grouped account, preference, privacy and support rows. Toggles are inline; anything
+                with more choices opens a sub-page or sheet.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="wrap">
+          <h2>03 — Primary flow</h2>
+          <div class="flow">
+            <span class="step">Home</span>
+            <span class="arrow">→</span>
+            <span class="step">Search &amp; filter</span>
+            <span class="arrow">→</span>
+            <span class="step">Place detail</span>
+            <span class="arrow">→</span>
+            <span class="step">Book a bay</span>
+            <span class="arrow">→</span>
+            <span class="step">Payment sheet</span>
+            <span class="arrow">→</span>
+            <span class="step">Trip / receipt</span>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="wrap">
+          <h2>04 — Layout notes</h2>
+          <div class="notes">
+            <div>
+              <h3>Grid &amp; spacing</h3>
+              <ul>
+                <li>390 × 844 frame, 22px side gutters, 8px base spacing.</li>
+                <li>Cards use a 12px radius; controls 8–10px; chips and badges pill.</li>
+                <li>One primary action per screen, always full-width or right-weighted.</li>
+                <li>Content scrolls under a fixed bottom tab bar.</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Type hierarchy</h3>
+              <ul>
+                <li>Screen title 15–16px bold; card title 11px bold.</li>
+                <li>Body 9px, meta 8px, labels 7px uppercase tracked.</li>
+                <li>Price is the largest number on the detail screen.</li>
+                <li>Grayscale only — hierarchy comes from weight and scale.</li>
+              </ul>
+            </div>
+            <div>
+              <h3>States to design next</h3>
+              <ul>
+                <li>Empty search, no results, and offline map fallback.</li>
+                <li>Loading skeletons for cards and bay grid.</li>
+                <li>Error, refund pending and receipt-ready states.</li>
+                <li>Long names and 200% text zoom without overflow.</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Accessibility</h3>
+              <ul>
+                <li>48px minimum touch targets; 72px for primary CTAs.</li>
+                <li>Visible focus rings and labels that never rely on colour.</li>
+                <li>Bay availability has a text legend, not just fills.</li>
+                <li>Bottom tabs pair icon with a text label.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="wrap">
+          <h2>05 — Palette</h2>
+          <div class="swatches">
+            <div class="swatch">
+              <div class="chip" style="background: #111111"></div>
+              <code>#111111 · ink</code>
+            </div>
+            <div class="swatch">
+              <div class="chip" style="background: #6b6b6b"></div>
+              <code>#6b6b6b · meta</code>
+            </div>
+            <div class="swatch">
+              <div class="chip" style="background: #d0d0d0"></div>
+              <code>#d0d0d0 · placeholder</code>
+            </div>
+            <div class="swatch">
+              <div class="chip" style="background: #f0f0f0"></div>
+              <code>#f0f0f0 · wash</code>
+            </div>
+            <div class="swatch">
+              <div class="chip" style="background: #ffffff"></div>
+              <code>#ffffff · paper</code>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="wrap">
+      <span>ParkSure · demo wireframe set</span>
+      <span>Black &amp; white / v1.0</span>
+    </footer>
+  </body>
+</html>
